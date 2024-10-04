@@ -1,0 +1,5 @@
+spark-class org.apache.spark.deploy.master.Master
+spark-class org.apache.spark.deploy.worker.Worker spark://10.70.228.175:7077 --cores 2 --memory 3g
+spark-class org.apache.spark.deploy.worker.Worker spark://10.70.228.175:7077 --cores 3 --memory 4g
+spark-class org.apache.spark.deploy.history.HistoryServer
+spark-submit --master spark://10.70.228.175:7077 spark_basics.py
